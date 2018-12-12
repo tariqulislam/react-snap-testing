@@ -2,7 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 function People (props) {
-    const {item} = props
+    const {item} = props;
+    if(!item) {
+        return <span>No Item Found</span>
+    }
+
     return (
        <tr>
            <td>{item.id}</td>

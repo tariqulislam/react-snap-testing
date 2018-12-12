@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test People Information in row renders the row without people inforamtion 1`] = `
+<span>
+  No Item Found
+</span>
+`;
