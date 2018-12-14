@@ -1,0 +1,178 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`It Should be testing People List Component Should create the table list of People in Component 1`] = `
+<div>
+  <table>
+    <thead>
+      <tr>
+        <th>
+          Id
+        </th>
+        <th>
+          User Name
+        </th>
+        <th>
+          Email
+        </th>
+        <th>
+          Phone
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          1
+        </td>
+        <td>
+          Bret
+        </td>
+        <td>
+          Sincere@april.biz
+        </td>
+        <td>
+          1-770-736-8031 x56442
+        </td>
+      </tr>
+      <tr>
+        <td>
+          2
+        </td>
+        <td>
+          Antonette
+        </td>
+        <td>
+          Shanna@melissa.tv
+        </td>
+        <td>
+          010-692-6593 x09125
+        </td>
+      </tr>
+      <tr>
+        <td>
+          3
+        </td>
+        <td>
+          Samantha
+        </td>
+        <td>
+          Nathan@yesenia.net
+        </td>
+        <td>
+          1-463-123-4447
+        </td>
+      </tr>
+      <tr>
+        <td>
+          4
+        </td>
+        <td>
+          Karianne
+        </td>
+        <td>
+          Julianne.OConner@kory.org
+        </td>
+        <td>
+          493-170-9623 x156
+        </td>
+      </tr>
+      <tr>
+        <td>
+          5
+        </td>
+        <td>
+          Kamren
+        </td>
+        <td>
+          Lucio_Hettinger@annie.ca
+        </td>
+        <td>
+          (254)954-1289
+        </td>
+      </tr>
+      <tr>
+        <td>
+          6
+        </td>
+        <td>
+          Leopoldo_Corkery
+        </td>
+        <td>
+          Karley_Dach@jasper.info
+        </td>
+        <td>
+          1-477-935-8478 x6430
+        </td>
+      </tr>
+      <tr>
+        <td>
+          7
+        </td>
+        <td>
+          Elwyn.Skiles
+        </td>
+        <td>
+          Telly.Hoeger@billy.biz
+        </td>
+        <td>
+          210.067.6132
+        </td>
+      </tr>
+      <tr>
+        <td>
+          8
+        </td>
+        <td>
+          Maxime_Nienow
+        </td>
+        <td>
+          Sherwood@rosamond.me
+        </td>
+        <td>
+          586.493.6943 x140
+        </td>
+      </tr>
+      <tr>
+        <td>
+          9
+        </td>
+        <td>
+          Delphine
+        </td>
+        <td>
+          Chaim_McDermott@dana.io
+        </td>
+        <td>
+          (775)976-6794 x41206
+        </td>
+      </tr>
+      <tr>
+        <td>
+          10
+        </td>
+        <td>
+          Moriah.Stanton
+        </td>
+        <td>
+          Rey.Padberg@karina.biz
+        </td>
+        <td>
+          024-648-3804
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`It Should be testing People List Component Should test Undefined People list in peoplelist 1`] = `
+<span>
+   Invalide Data Format for People List
+</span>
+`;
+
+exports[`It Should be testing People List Component Should test empty Peple List in Component 1`] = `
+<span>
+   Empty List View 
+</span>
+`;
