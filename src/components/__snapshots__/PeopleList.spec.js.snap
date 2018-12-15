@@ -165,6 +165,59 @@ exports[`It Should be testing People List Component Should create the table list
 </div>
 `;
 
+exports[`It Should be testing People List Component Should render the 1 rows In people List 1`] = `
+<div>
+  <table>
+    <thead>
+      <tr>
+        <th>
+          Id
+        </th>
+        <th>
+          User Name
+        </th>
+        <th>
+          Email
+        </th>
+        <th>
+          Phone
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          1
+        </td>
+        <td>
+          Bret
+        </td>
+        <td>
+          Sincere@april.biz
+        </td>
+        <td>
+          1-770-736-8031 x56442
+        </td>
+      </tr>
+      <tr>
+        <td>
+          2
+        </td>
+        <td>
+          Lean
+        </td>
+        <td>
+          lean@april.biz
+        </td>
+        <td>
+          1-770-736-8033 x56442
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
 exports[`It Should be testing People List Component Should test Undefined People list in peoplelist 1`] = `
 <span>
    Invalide Data Format for People List
