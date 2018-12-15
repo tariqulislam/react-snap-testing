@@ -1,44 +1,60 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Snapshot Testing With React JS And Jest Using TDD
 
-## Available Scripts
+As Developer, We are facing different types of bugs and errors, during development time. Some Bugs make developer life hell. So using testing framework or testing tool and TDD(Test Driven Development) are helpful for developer to create less and non critical bugs during developement.
 
-In the project directory, you can run:
+# Installation and Configuration
 
-### `npm start`
+1. clone or download the `https://github.com/tariqulislam/react-snap-testing.git` repository
+2. run command to `terminal` or `cmd` `npm install` or `yarn install`
+3. Then run command `npm test`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## For Update the snapshot of test using
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+1. Run command `npm test -u`
 
-### `npm test`
+## Create React Test Component 
+1. Create React JS Component with name `<filename>.jsx`
+```javascript
+import React from 'react'
+import PropTypes from 'prop-types'
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+function People (props) {
+    const {item} = props
+    return (
+       <tr>
+           <td>{item.id}</td>
+           <td>{item.username}</td>
+           <td>{item.email}</td>
+           <td>{item.phone}</td>
+       </tr>
+    )
+}
 
-### `npm run build`
+People.propTypes = {
+    item: PropTypes.object,
+}
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+export default People;
+```
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## Write the Test Case
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. You can write your own test case.
+ 1.1 Create the File in `src/components` folder with `<filename>.spec.js` or `<filename>.test.js`.
+ 1.2 Import the React Component which You are using for test in `<filename>.spec.js` file.
+ 1.3 Write the Test case using describe() and it() test scope function.
+ 
+## Example of create test case 
+```javascript
+import React from 'react'
+import renderer from 'react-test-renderer'
+import People from './People'
 
-### `npm run eject`
+describe(`Test People Information in row`, () => {
+  it('renders the row without people inforamtion', () => {
+      const tree = renderer.create(<People />).toJSON();
+      expect(tree).toMatchSnapshot();
+  });
+});
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
