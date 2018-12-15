@@ -1,8 +1,8 @@
-# Snapshot Testing With React JS And Jest Using TDD
+## Snapshot Testing With React JS And Jest Using TDD
 
 As Developer, We are facing different types of bugs and errors, during development time. Some Bugs make developer life hell. So using testing framework or testing tool and TDD(Test Driven Development) are helpful for developer to create less and non critical bugs during developement.
 
-# Installation and Configuration
+## Installation and Configuration
 
 1. clone or download the `https://github.com/tariqulislam/react-snap-testing.git` repository
 2. run command to `terminal` or `cmd` `npm install` or `yarn install`
@@ -58,3 +58,6 @@ describe(`Test People Information in row`, () => {
 });
 
 ```
+## Licences
+
+All the Code and Information of this repository is goes to Licence unders `MIT`. You can use it with free of charge and modified it and contribute on it.
